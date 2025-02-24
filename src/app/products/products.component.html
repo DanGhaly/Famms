@@ -1,0 +1,25 @@
+<section class="gridlist container py-5" id="our_products">
+    <h2 class="text-center fw-bold mb-4">Our <span class="text-danger">Products</span></h2>
+    <div class="row g-4">
+        <!-- Product Template -->
+        <div class="col-md-6 col-lg-4 col-xl-3" *ngFor="let product of products">
+            <div class="product-card position-relative text-center p-3 shadow rounded bg-light h-100">
+                <div class="product-img position-relative overflow-hidden rounded">
+                    <img src="{{product.image}}" alt="{{product.name}}" class="img-fluid w-100">
+                    <div class="imglayer position-absolute w-100 h-100 bg-white opacity-0"></div>
+                </div>
+                <div class="buttons position-absolute top-50 start-50 translate-middle opacity-0">
+                    <button class="btn btn-danger w-100 mb-2 glp-btn">Add To Cart</button>
+                    <button class="btn btn-dark w-100 glp-btndark" >Buy Now</button>
+                </div>
+                <div class="d-flex justify-content-between mt-3">
+                    <p class="fw-semibold mb-0">{{product.name}}</p>
+                    <p class="fw-bold text-danger mb-0">${{product.price}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="text-center mt-4">
+        <button class="btn btn-danger gl-btn px-5 py-2">View All Products</button>
+    </div>
+</section>

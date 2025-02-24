@@ -1,0 +1,130 @@
+/* Navbar */
+.navbar {
+    width: 100%;
+    padding: 1rem 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+}
+
+.navbar-brand img {
+    width: 13rem;
+    height: auto;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #f7444e;
+}
+
+.navbar-nav .nav-item i {
+    font-size: 1.5rem;
+}
+
+/* Header Section */
+header {
+    width: 100%;
+    background-image: url('../../../public/assets/images/slider-bg.jpg');
+    background-position: top right;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    min-height: 50vh;
+    color: white;
+}
+
+header .row {
+    width: 100%;
+}
+
+/* Left Side Content */
+header .col-lg-6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+header p {
+    font-size: 1.125rem; /* 18px */
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Typing Animation */
+.spantyping::after {
+    color: #f7444e;
+    content: '';
+    animation: typing 3s infinite;
+}
+
+@keyframes typing {
+    0% { content: "|"; }
+    7.7% { content: "S|"; }
+    15.4% { content: "Sa|"; }
+    23.1% { content: "Sal|"; }
+    30.8% { content: "Sale|"; }
+    38.5% { content: "Sale |"; }
+    46.2% { content: "Sale 2|"; }
+    53.9% { content: "Sale 20%|"; }
+    61.6% { content: "Sale 20% |"; }
+    69.3% { content: "Sale 20% O|"; }
+    77% { content: "Sale 20% Of|"; }
+    84.7% { content: "Sale 20% Of|"; }
+    100% { content: "Sale 20% Off|"; }
+}
+
+/* Shop Now Button */
+.shopnow {
+    padding: 12px 45px;
+    background-color: #f7444e; 
+    border: none; 
+    color: #ffffff;
+    border-radius: 5px; 
+    font-weight: 700; 
+    font-size: 1.1rem; 
+    transition: background-color 0.3s, transform 0.3s; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); 
+}
+
+.shopnow:hover {
+    color: #f7444e; 
+    background-color: #ffffff; 
+    transform: scale(1.05); 
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 3rem;
+        font-weight: 600;
+    }
+
+    header p {
+        font-size: 1rem;
+        font-weight: 800;
+
+    }
+
+    .navbar-nav {
+        gap: 1rem;
+    }
+}

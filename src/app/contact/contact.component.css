@@ -1,0 +1,68 @@
+/* Contact Section */
+.contactbottom {
+    background-color: #f8f8f8;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.list-unstyled {
+    padding: 0;
+}
+
+.list-unstyled li {
+    margin-bottom: 0.8rem;
+    color: #333;
+    font-size: 1rem;
+}
+
+.list-unstyled .title {
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.list-unstyled li a {
+    text-decoration: none;
+    color: #666;
+    transition: color 0.3s ease-in-out;
+}
+
+.list-unstyled li a:hover {
+    color: #f7444e;
+}
+
+.list-unstyled img {
+    width: 150px;
+}
+
+/* Newsletter Form */
+#subscribeBox {
+    width: 100%;
+    position: relative;
+}
+
+#email2 {
+    width: 70%;
+    height: 45px;
+    padding: 0 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+.subscribe-button {
+    width: 30%;
+    height: 45px;
+    border: none;
+    background-color: #f7444e;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    transition: background 0.3s ease-in-out;
+}
+
+.subscribe-button:hover {
+    background-color: #d63031;
+}

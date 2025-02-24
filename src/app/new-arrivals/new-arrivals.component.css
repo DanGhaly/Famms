@@ -1,0 +1,82 @@
+/* New Arrival Styling */
+.newarrivals {
+    position: relative;
+    width: 100%;
+    height: 80vh; 
+    background-image: url(../../../public/assets/images/arrival-bg.png); 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: top left; 
+    background-attachment: fixed; 
+    display: flex; 
+    align-items: center; 
+    justify-content: flex-end; 
+    padding: 0 2rem; 
+    z-index: 1; 
+}
+
+/* Heading Styles */
+h2 {
+    font-size: 4rem;
+    margin-bottom: 1.25rem; 
+    text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.7); 
+    letter-spacing: 1px; 
+    color: #002c3e; 
+}
+
+/* Paragraph Styles */
+p {
+    font-size: 1.125rem; 
+    font-weight: 800;
+    margin-top: 1.25rem; 
+    margin-bottom: 0.9375rem; 
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(255, 255, 255, 0.9); 
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); 
+}
+
+/* Button Container */
+.na_shopnow {
+    margin-top: 20px; 
+
+/* Button Styles */
+.shop-now-btn {
+    padding: 12px 45px;
+    background-color: #f7444e; 
+    border: none; 
+    color: #ffffff; 
+    border-radius: 25px; 
+    font-weight: 700; 
+    font-size: 1.1rem; 
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); 
+}
+
+.shop-now-btn:hover {
+    color: #f7444e; 
+    background-color: #ffffff; 
+    transform: scale(1.05); 
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4); 
+}
+
+/* Ensure text is above the image */
+.container {
+    position: relative;
+    z-index: 2; 
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 3rem; 
+    }
+
+    .newarrivals p {
+        font-size: 2rem; 
+    }
+
+    .newarrivals {
+        padding: 0 1rem; 
+    }
+}
+}

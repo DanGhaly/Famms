@@ -1,0 +1,29 @@
+<section class="gridlist" id="Customertestimonial">
+    <div class="container text-center">
+        <h2 class="m-5">Customer's Testimonial</h2>
+        <div class="Customertestimonialmain">
+            <div class="Customertestimonialmid">
+                <div class="btnl">
+                    <button (click)="previousTestimonial()" class="btn btn-circle">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </button>
+                </div>
+                <div class="ctimg">
+                    <img [src]="currentTestimonial.image" alt="Client Image" class="img-fluid rounded-circle">
+                </div>
+                <div class="btnr">
+                    <button (click)="nextTestimonial()" class="btn btn-circle">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="ctmidtxt">
+                <h4>{{ currentTestimonial.name }}</h4>
+                <h6 class="text-muted">{{ currentTestimonial.role }}</h6>
+            </div>
+            <div class="cttxt">
+                <p>{{ currentTestimonial.text }}</p>
+            </div>
+        </div>
+    </div>
+</section>

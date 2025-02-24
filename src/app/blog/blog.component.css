@@ -1,0 +1,55 @@
+/* Section Styling */
+#blog {
+    width: 100%;
+}
+
+#blog h2 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    position: relative;
+}
+
+#blog h2::after {
+    content: '';
+    display: block;
+    width: 70px; 
+    height: 5px; 
+    background-color: #f7444e;
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Feature Card Styling */
+.feature-card {
+    background-color: #002c3e;
+    color: white;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    height: 300px;
+    padding: 30px;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 15px 20px 20px rgba(0, 0, 0, 0.2);
+}
+
+.feature-icon {
+    width: 70px; 
+    height: auto;
+    margin-bottom: 10px;
+    filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(344deg) brightness(108%) contrast(99%);
+}
+
+.feature-card h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+}
